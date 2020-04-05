@@ -1,0 +1,223 @@
+* { margin: 0; padding: 0; font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,"Noto Sans",sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";}
+
+h1, h2, h3, h4, h5, h6 { font-weight: 500; line-height: 1.2;}
+
+.body { display: flex;  width: 100%;}
+
+/**************MARGE PRESENTATION**************/
+.pdp {
+  height: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.pdp img { 
+  border-radius: 50%;
+   box-shadow: 2px 2px 2px 2px #404040; 
+   height: 150px;
+  margin: 1rem 0 1rem 0;
+}
+
+.bl {
+  width: 25%;
+  min-width: 300px;
+  display: flex;
+  flex-direction: column;
+  background-color: #FFC107;
+}
+
+/*CONTACT*/
+.t {
+  color: #FFC107;
+  height: 40px;
+  background-color:#635f5f ;
+  text-transform: uppercase;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.t h4 { font-size: 1.4rem;}
+
+.content ul {
+  list-style-type: none;
+  margin: 2rem 3rem 3rem;
+  font-weight: 500;
+  font-size: 0.9rem;
+}
+
+.content ul li { margin-bottom: 1rem;}
+
+
+/*A PROPOS DE MOI*/
+.apmoi { height: 100%;}
+
+.txt {
+  margin: 2rem 3rem;
+  text-align: justify;
+  font-size: 0.9rem;
+}
+
+/*LOISIRS*/
+.icloisirs { 
+  height: 100px;
+  font-size: 2.5rem;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  color:#635f5f ;
+}
+
+/**************CONTENT**************/
+.br { margin-left: 2rem;  width: 75%;}
+
+/*NOM PRENOM*/
+.title {
+  height: 200px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.title h1 { font-size: 2.8rem;}
+
+.title h1 span { text-transform: uppercase;  color: #FFC107;}
+
+.title h2 { font-size: 1.9rem;}
+
+.hr1 {
+  height: 2px;
+  background-color: #FFC107;
+  border: 0;
+  width: 120px;
+}
+
+/*TITLE SECTION*/
+.tc { display: flex;  margin-bottom: 0.5rem; }
+
+.tc i { font-size: 3rem;  color: #FFC107} 
+
+.tc h3 {
+  text-transform: uppercase;
+  font-size: 1.8rem;
+  font-weight: 600;
+  margin-left: 1.5rem;
+  color:#FFC107;
+}
+
+hr {
+  height: 2px;
+  background-color:  #FFC107;
+  border: 0;
+  width: 95%;
+}
+
+/*FORMATION && XPRO*/
+
+.cc, .c { display: flex;}
+
+.cc { margin: 2rem 2rem 2rem 0; }
+
+ .c { width: 40%;  margin-right: 2rem;}
+
+.c i  { 
+  color:  #FFC107; 
+   margin: 0.4rem 0.5rem 0 0;
+    width: 32px;
+  }
+
+.c .c1 i { font-size: 1rem;}
+.c i { font-size: 0.7rem;}
+
+.cr { width: 60%; margin-right: 10%;}
+
+.cr h4 {
+  text-transform: uppercase;
+  font-size: 1.3rem;
+  margin-bottom: 0.5rem;
+}
+
+.cr p { margin-bottom: 0.5rem;}
+
+/*RECOMMANDATIONS*/
+.recs { 
+  display: flex; 
+  height: auto;
+  width: 100%;
+  margin: 2rem 0 3rem 0;
+}
+
+.crec1, .crec2 {width: 50%; line-height: 1.5;}
+
+.mk { margin-bottom: 0.5rem;  font-weight: 600;}
+
+.dt { font-weight: 500;}
+
+/*LIENS*/
+a {  text-decoration: none;}
+
+a:link {  color: black}
+
+a:visited { color: black;  }
+
+a:focus { border-bottom: 1px solid; }
+
+.bl a:hover  { color: white;}
+
+.br a:hover { color: #FFC107;}
+
+/*MOBILE*/
+@media all and (max-width: 480px)
+{
+  .body { flex-wrap: wrap;  overflow-x: hidden;}
+  .apmoi, .lsrs { display: none;}
+  .bl { width: 100%; overflow-x : auto;}
+  .br  { 
+    width: 100%
+    ;margin: 1rem; 
+    overflow-x: hidden;
+  }
+  .cr {
+    line-height: 1.5;
+    display: flex;
+    flex-direction: column;
+     margin-left: 4rem;
+     width: 100%;
+     margin-right: 0;
+  }
+  .c {margin: 0 0 1.5rem 1rem; width: 100%}
+
+  .content ul { 
+    display: flex;
+     flex-direction: column;
+     margin-bottom: 0;
+    }
+  .content ul li { margin: 1rem;  line-height: 1.7;}
+  .title {  margin: 1rem; text-align: center;}
+  .title h1 { font-size: 2.3rem; margin-bottom: 1rem;}
+  h2 span { text-decoration: underline #feca07;}
+  .hr1 { display: none}
+  .tc h3 { font-size: 1.3rem;}
+  .tc i { font-size: 2rem;}
+  .cc { margin: 2rem 0 1rem 0; flex-wrap: wrap;}
+  .recs {  flex-direction: column; margin-left: 4rem;}
+  .crec1 { margin-bottom: 2rem; width: 100%;}
+  .crec2 { margin: 0; width: 100%;}
+  section { margin-bottom: 1rem;}
+}
+
+@media all and (min-width: 481px) and (max-width: 860px)
+{
+  .body { flex-wrap: wrap;}
+  .bl, .br { width: 100%;}
+  .apmoi, .lsrs { display: none;}
+  .content{
+    display:flex;
+    flex-direction:column;
+    align-items: center;}
+  .title {align-items: center;}
+  h2 span { text-decoration: underline #feca07;}
+  .hr1 { display: none}
+}
+
